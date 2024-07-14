@@ -13,15 +13,35 @@ gsap.to(".main_content", {
 });
 
 const products = [
-  { id: '07', name: 'Soda Coral Blurring Eye Palette', colors: 19, price: "9,900", discount: '29%', imgSrc: '../img/shadowPalette_01.jpg' },
-  { id: '08', name: 'Candy Coral Blurring Eye Palette', colors: 19, price: "9,900", discount: '29%', imgSrc: '../img/shadowPalette_02.jpg' },
-  { id: '10', name: 'Rage Pink Blurring Eye Palette', colors: 19, price: "9,900", discount: '29%', imgSrc: '../img/shadowPalette_03.jpg' },
-  { id: '04', name: 'Lavender Blurring Eye Palette', colors: 19, price: "9,900", discount: '29%', imgSrc: '../img/shadowPalette_04.jpg' }
+  {
+    name: "Soda Coral Blurring Eye Palette 19 COLOR",
+    price: "22,800",
+    discount: "32%",
+    imgSrc: "../img/shadowPalette_01.jpg",
+  },
+  {
+    name: "Candy Coral Blurring Eye Palette 19 COLOR",
+    price: "22,80",
+    discount: "32%",
+    imgSrc: "../img/shadowPalette_02.jpg",
+  },
+  {
+    name: "Lazy Pink Blurring Eye Palette 19 COLOR",
+    price: "22,80",
+    discount: "32%",
+    imgSrc: "../img/shadowPalette_03.jpg",
+  },
+  {
+    name: "Lavender Blurring Eye Palette 19 COLOR",
+    price: "22,80",
+    discount: "32%",
+    imgSrc: "../img/shadowPalette_04.jpg",
+  },
 ];
 
-const productContainer = document.getElementById('productContainer');
+const productContainer = document.getElementById("productContainer");
 
-products.forEach(product => {
+products.forEach((product) => {
   const productHTML = `
     <div class="product_container">
       <div class="imgBox">
@@ -29,7 +49,7 @@ products.forEach(product => {
       </div>
       <div class="textBox">
         <div class="name">
-          ${product.id} ${product.name} ${product.colors}COLOR
+        ${product.name}
         </div>
         <div class="price">
           <span class="discount">${product.discount}</span> ${product.price}원
@@ -39,7 +59,6 @@ products.forEach(product => {
   `;
   productContainer.innerHTML += productHTML;
 });
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const tabs = document.querySelectorAll(".tab");
@@ -51,14 +70,14 @@ document.addEventListener("DOMContentLoaded", function () {
       {
         imgSrc: "../img/vintage_01.jpg",
         altText: "vintage_01",
-        name: "Water Glow Coating Cushion",
+        name: "Stay Fixer Multi-Color Powder 3Colors",
         discount: "35%",
         price: "19,800원",
       },
       {
         imgSrc: "../img/vintage_02.jpg",
         altText: "vintage_02",
-        name: "Stay Fixer Multi-Color Powder 3 Colors",
+        name: "Water Glow Coating Cushion",
         discount: "25%",
         price: "26,800원",
       },
@@ -108,56 +127,56 @@ document.addEventListener("DOMContentLoaded", function () {
       {
         imgSrc: "../img/shadowPalette_01.jpg",
         altText: "shadowPalette_01",
-        name: "[1999 Vintage] Wake Make Soft Blurring Eye Palette 19COLOR",
+        name: "Soda Coral Blurring Eye Palette 19 COLOR",
         discount: "32%",
         price: "22,800원",
       },
       {
         imgSrc: "../img/shadowPalette_02.jpg",
         altText: "shadowPalette_02",
-        name: "[1999 Vintage] Wake Make Soft Blurring Eye Palette 19COLOR",
+        name: "Candy Coral Blurring Eye Palette 19 COLOR",
         discount: "32%",
         price: "22,800원",
       },
       {
         imgSrc: "../img/shadowPalette_03.jpg",
         altText: "shadowPalette_03",
-        name: "[1999 Vintage] Wake Make Soft Blurring Eye Palette 19COLOR",
+        name: "Lazy Pink Blurring Eye Palette 19 COLOR",
         discount: "32%",
         price: "22,800원",
       },
       {
         imgSrc: "../img/shadowPalette_04.jpg",
         altText: "shadowPalette_04",
-        name: "[1999 Vintage] Wake Make Soft Blurring Eye Palette 19COLOR",
+        name: "Lavender Blurring Eye Palette 19 COLOR",
         discount: "32%",
         price: "22,800원",
       },
       {
         imgSrc: "../img/shadowPalette_05.jpg",
         altText: "shadowPalette_05",
-        name: "[1999 Vintage] Wake Make Soft Blurring Eye Palette 19COLOR",
+        name: "Sunset Blurring Eye Palette 19 COLOR",
         discount: "32%",
         price: "22,800원",
       },
       {
         imgSrc: "../img/shadowPalette_06.jpg",
         altText: "shadowPalette_06",
-        name: "[1999 Vintage] Wake Make Soft Blurring Eye Palette 19COLOR",
+        name: "Lively Blurring Eye Palette 19 COLOR",
         discount: "32%",
         price: "22,800원",
       },
       {
         imgSrc: "../img/shadowPalette_07.jpg",
         altText: "shadowPalette_07",
-        name: "[1999 Vintage] Wake Make Soft Blurring Eye Palette 19COLOR",
+        name: "Mute Coral Blurring Eye Palette 19 COLOR",
         discount: "32%",
         price: "22,800원",
       },
       {
         imgSrc: "../img/shadowPalette_08.jpg",
         altText: "shadowPalette_08",
-        name: "[1999 Vintage] Wake Make Soft Blurring Eye Palette 19COLOR",
+        name: "Cocoa Blurring Eye Palette 19 COLOR",
         discount: "32%",
         price: "22,800원",
       },
@@ -166,56 +185,56 @@ document.addEventListener("DOMContentLoaded", function () {
       {
         imgSrc: "../img/lip_01.jpg",
         altText: "lip_01",
-        name: "[1999 Vintage] Wake Make Soft Blurring Eye Palette 19COLOR",
+        name: "Spicy Martini Dewy Gel Maxi Gloss",
         discount: "32%",
         price: "22,800원",
       },
       {
         imgSrc: "../img/lip_02.jpg",
         altText: "lip_02",
-        name: "[1999 Vintage] Wake Make Soft Blurring Eye Palette 19COLOR",
+        name: "Slow Dance Dewy Gel Maxi Gloss",
         discount: "32%",
         price: "22,800원",
       },
       {
         imgSrc: "../img/lip_03.jpg",
         altText: "lip_03",
-        name: "[1999 Vintage] Wake Make Soft Blurring Eye Palette 19COLOR",
+        name: "Love Bay Dewy Gel Maxi Gloss",
         discount: "32%",
         price: "22,800원",
       },
       {
         imgSrc: "../img/lip_04.jpg",
         altText: "lip_04",
-        name: "[1999 Vintage] Wake Make Soft Blurring Eye Palette 19COLOR",
+        name: "Flirting Dewy Gel Maxi Gloss",
         discount: "32%",
         price: "22,800원",
       },
       {
         imgSrc: "../img/lip_05.jpg",
         altText: "lip_05",
-        name: "[1999 Vintage] Wake Make Soft Blurring Eye Palette 19COLOR",
+        name: "Tanned Girl Dewy Gel Maxi Gloss",
         discount: "32%",
         price: "22,800원",
       },
       {
         imgSrc: "../img/lip_06.jpg",
         altText: "lip_06",
-        name: "[1999 Vintage] Wake Make Soft Blurring Eye Palette 19COLOR",
+        name: "Malibu Dewy Gel Maxi Gloss",
         discount: "32%",
         price: "22,800원",
       },
       {
         imgSrc: "../img/lip_07.jpg",
         altText: "lip_07",
-        name: "[1999 Vintage] Wake Make Soft Blurring Eye Palette 19COLOR",
+        name: "Cherrymore Dewy Gel Maxi Gloss",
         discount: "32%",
         price: "22,800원",
       },
       {
         imgSrc: "../img/lip_08.jpg",
         altText: "lip_08",
-        name: "[1999 Vintage] Wake Make Soft Blurring Eye Palette 19COLOR",
+        name: "Hunted Dewy Gel Maxi Gloss",
         discount: "32%",
         price: "22,800원",
       },
@@ -224,30 +243,29 @@ document.addEventListener("DOMContentLoaded", function () {
       {
         imgSrc: "../img/cushion_01.jpg",
         altText: "cushion_01",
-        name: "[1999 Vintage] Wake Make Soft Blurring Eye Palette 19COLOR",
-        discount: "32%",
-        price: "22,800원",
+        name: "Water Velvet Cover Cushion",
+        price: "36,000원",
       },
       {
         imgSrc: "../img/cushion_02.jpg",
         altText: "cushion_02",
-        name: "[1999 Vintage] Wake Make Soft Blurring Eye Palette 19COLOR",
-        discount: "32%",
-        price: "22,800원",
+        name: "Water Glow Coating Cushion",
+        discount: "25%",
+        price: "26,800원",
       },
       {
         imgSrc: "../img/cushion_03.jpg",
         altText: "cushion_03",
-        name: "[1999 Vintage] Wake Make Soft Blurring Eye Palette 19COLOR",
-        discount: "32%",
-        price: "22,800원",
+        name: "Water Velvet Cover Foundation",
+        discount: "30%",
+        price: "26,600원",
       },
       {
         imgSrc: "../img/cushion_04.jpg",
         altText: "cushion_04",
-        name: "[1999 Vintage] Wake Make Soft Blurring Eye Palette 19COLOR",
-        discount: "32%",
-        price: "22,800원",
+        name: "Defining Cover Concealer 6 Colors",
+        discount: "25%",
+        price: "10,900원",
       },
     ],
   };
@@ -325,7 +343,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
 //mainBrandStory - swiper
 let swiper = new Swiper(".mySwiper", {
   slidesPerView: 1.5,
@@ -342,14 +359,14 @@ let swiper = new Swiper(".mySwiper", {
   },
 });
 
-document.querySelectorAll('.mySwiper').forEach(function (target) {
+document.querySelectorAll(".mySwiper").forEach(function (target) {
   let swp = target.swiper;
 
-  target.addEventListener('mouseenter', function () {
+  target.addEventListener("mouseenter", function () {
     swp.autoplay.stop();
   });
 
-  target.addEventListener('mouseleave', function () {
+  target.addEventListener("mouseleave", function () {
     swp.autoplay.start();
   });
 });

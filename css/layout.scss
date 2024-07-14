@@ -15,17 +15,17 @@ li {
   list-style: none;
 }
 
-li{
+li {
   cursor: pointer;
 }
 
-a{
+a {
   text-decoration: none;
   color: #000;
   cursor: pointer;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
@@ -42,8 +42,8 @@ button{
   left: 0;
   z-index: 1000;
 
-  .header_left{
-    img{
+  .header_left {
+    img {
       cursor: pointer;
     }
   }
@@ -53,7 +53,7 @@ button{
     gap: 30px;
     margin-right: 95px;
 
-    li{
+    li {
       font-weight: 600;
     }
   }
@@ -67,6 +67,7 @@ button{
   color: #2B2B2B;
   padding: 0 20px;
   overflow-x: hidden;
+  margin-right: 8px;
 
 
   .footer_top {
@@ -82,8 +83,8 @@ button{
       font-size: 14px;
       font-weight: 600;
 
-      li{
-        &:hover{
+      li {
+        &:hover {
           text-decoration: underline;
         }
       }
@@ -95,41 +96,42 @@ button{
     }
   }
 
-  .footer_bottom{
+  .footer_bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 359px;
 
-    .bottom_left{
+    .bottom_left {
       font-size: 14px;
       display: flex;
       flex-direction: column;
       gap: 9px;
 
-      .text_container{
+      .text_container {
         display: flex;
         flex-direction: column;
         gap: 10px;
       }
     }
 
-    .bottom_middle{
+    .bottom_middle {
       font-size: 14px;
       margin-bottom: 38px;
     }
 
-    .bottom_right{
+    .bottom_right {
       display: flex;
       flex-direction: column;
       gap: 10px;
       font-size: 14px;
 
-      .text02{
+      .text02 {
         font-size: 20px;
         font-weight: 600;
       }
-      button{
+
+      button {
         background-color: #fff;
         color: #2B2B2B;
         border: 1px solid #2B2B2B;

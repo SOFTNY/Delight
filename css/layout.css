@@ -58,6 +58,7 @@ button {
   color: #2B2B2B;
   padding: 0 20px;
   overflow-x: hidden;
+  margin-right: 8px;
 }
 #footer .footer_top {
   display: flex;

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// reset
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+ul,
+li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+li {
+    cursor: pointer;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+
+    .main_categories {
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+        padding: 0 45px;
+        margin-top: 127px;
+
+        .menu_categories {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            width: 100%;
+            height: 24px;
+        }
+
+        // tab_menu
+        .tab_menu {
+            display: flex;
+            gap: 40px;
+            font-size: 24px;
+            color: #0000004D;
+
+            .tab {
+                transition: color 0.3s, opacity 0.3s;
+
+                &.active {
+                    color: black;
+                    opacity: 1;
+                }
+
+                &:not(.active) {
+                    opacity: 0.5;
+                }
+            }
+
+        }
+
+    }
+
+
+    // main_product
+    .main_product{
+        display: flex;
+        flex-direction: column;
+        margin-top: 57px;
+        margin-bottom: 278px;
+
+        .product_top,
+        .product_bottom{
+            display: flex;
+            gap: 20px;
+            padding: 40px 45px;
+
+
+            .product_container{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                cursor: pointer;
+
+                .imgBox{
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .textBox{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    font-size: 18px;
+
+                    .price{
+                        font-weight: 600;
+
+                        .discount{
+                            color: #FF0000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -6,6 +6,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 ul,
@@ -65,41 +67,41 @@ li {
 
 
     // main_product
-    .main_product{
+    .main_product {
         display: flex;
         flex-direction: column;
         margin-top: 57px;
         margin-bottom: 278px;
 
         .product_top,
-        .product_bottom{
+        .product_bottom {
             display: flex;
             gap: 20px;
             padding: 40px 45px;
 
 
-            .product_container{
+            .product_container {
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
                 cursor: pointer;
 
-                .imgBox{
-                    img{
+                .imgBox {
+                    img {
                         width: 100%;
                     }
                 }
 
-                .textBox{
+                .textBox {
                     display: flex;
                     flex-direction: column;
                     gap: 15px;
                     font-size: 18px;
 
-                    .price{
+                    .price {
                         font-weight: 600;
 
-                        .discount{
+                        .discount {
                             color: #FF0000;
                         }
                     }

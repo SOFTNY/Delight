@@ -6,6 +6,8 @@ body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 ul,
@@ -52,11 +54,44 @@ button {
     display: flex;
     gap: 30px;
     margin-right: 95px;
+    font-weight: 600;
 
-    li {
-      font-weight: 600;
+    .menu_item {
+      position: relative;
+
+      .submenu {
+        display: none;
+        position: absolute;
+        width: 150px;
+        top: 100%;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.289);
+        border: 1px solid #ccc;
+
+        li {
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.444);
+          }
+
+          a {
+            display: block;
+            padding: 10px;
+            color: #fff;
+            font-weight: 400;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .menu_item:hover .submenu {
+      display: block;
     }
   }
+
+
 }
 
 //footer
@@ -67,7 +102,7 @@ button {
   color: #2B2B2B;
   padding: 0 20px;
   overflow-x: hidden;
-  margin-right: 8px;
+  margin-right: 5px;
 
 
   .footer_top {

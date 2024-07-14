@@ -4,6 +4,8 @@ body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 ul,
@@ -46,9 +48,34 @@ button {
   display: flex;
   gap: 30px;
   margin-right: 95px;
-}
-#header .header_right li {
   font-weight: 600;
+}
+#header .header_right .menu_item {
+  position: relative;
+}
+#header .header_right .menu_item .submenu {
+  display: none;
+  position: absolute;
+  width: 150px;
+  top: 100%;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.289);
+  border: 1px solid #ccc;
+}
+#header .header_right .menu_item .submenu li:hover {
+  background-color: rgba(255, 255, 255, 0.444);
+}
+#header .header_right .menu_item .submenu li a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+}
+#header .header_right .menu_item:hover .submenu {
+  display: block;
 }
 
 #footer {
@@ -58,7 +85,7 @@ button {
   color: #2B2B2B;
   padding: 0 20px;
   overflow-x: hidden;
-  margin-right: 8px;
+  margin-right: 5px;
 }
 #footer .footer_top {
   display: flex;

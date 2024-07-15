@@ -329,7 +329,7 @@ document.addEventListener("DOMContentLoaded", function () {
       price.appendChild(discount);
     }
 
-    const priceText = document.createTextNode(` ${product.price}`);
+    const priceText = document.createTextNode(`${product.price}`);
     price.appendChild(priceText);
 
     textBox.appendChild(name);

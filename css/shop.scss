@@ -31,7 +31,7 @@ li {
         flex-direction: column;
         gap: 21px;
         padding: 0 45px;
-        margin-top: 127px;
+        margin-top: 90px;
 
         .menu_categories {
             display: flex;
@@ -47,6 +47,7 @@ li {
             gap: 40px;
             font-size: 24px;
             color: #0000004D;
+            margin-top: 45px;
 
             .tab {
                 transition: color 0.3s, opacity 0.3s;
@@ -71,6 +72,8 @@ li {
         display: flex;
         flex-direction: column;
         margin-top: 57px;
+        margin-bottom: 100px;
+        padding: 0 45px;
 
         .product_container {
             display: flex;
@@ -79,17 +82,22 @@ li {
 
             .productBox {
                 display: flex;
+                gap: 20px;
                 flex-direction: column;
                 margin: 10px;
-                width: calc(25% - 20px); // 4개씩 배치되도록 설정 (100% / 4 - margin)
+                width: calc(25% - 20px);
 
                 .product_img {
+                    cursor: pointer;
+
                     img {
                         width: 100%;
                     }
                 }
 
                 .product_text {
+                    cursor: pointer;
+
                     .name {
                         margin: 10px 0;
                     }

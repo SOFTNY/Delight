@@ -29,7 +29,7 @@ li {
   flex-direction: column;
   gap: 21px;
   padding: 0 45px;
-  margin-top: 127px;
+  margin-top: 90px;
 }
 #main .main_categories .menu_categories {
   display: flex;
@@ -43,6 +43,7 @@ li {
   gap: 40px;
   font-size: 24px;
   color: rgba(0, 0, 0, 0.3019607843);
+  margin-right: 45px;
 }
 #main .main_categories .tab_menu .tab {
   transition: color 0.3s, opacity 0.3s;
@@ -58,6 +59,8 @@ li {
   display: flex;
   flex-direction: column;
   margin-top: 57px;
+  margin-bottom: 100px;
+  padding: 0 45px;
 }
 #main .main_product .product_container {
   display: flex;
@@ -66,12 +69,19 @@ li {
 }
 #main .main_product .product_container .productBox {
   display: flex;
+  gap: 20px;
   flex-direction: column;
   margin: 10px;
   width: calc(25% - 20px);
 }
+#main .main_product .product_container .productBox .product_img {
+  cursor: pointer;
+}
 #main .main_product .product_container .productBox .product_img img {
   width: 100%;
+}
+#main .main_product .product_container .productBox .product_text {
+  cursor: pointer;
 }
 #main .main_product .product_container .productBox .product_text .name {
   margin: 10px 0;

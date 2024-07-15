@@ -54,6 +54,7 @@ button {
   font-size: 24px;
   color: rgba(0, 0, 0, 0.3019607843);
   padding: 0 45px;
+  margin-bottom: 45px;
 }
 #main .tab_menu .tab {
   transition: color 0.3s, opacity 0.3s;
@@ -68,6 +69,7 @@ button {
 #main .main_product {
   display: flex;
   flex-direction: column;
+  padding: 0 45px;
 }
 #main .main_product .product_container {
   display: flex;
@@ -77,12 +79,19 @@ button {
 }
 #main .main_product .product_container .productBox {
   display: flex;
+  gap: 20px;
   flex-direction: column;
   margin: 10px;
   width: calc(25% - 20px);
 }
+#main .main_product .product_container .productBox .product_img {
+  cursor: pointer;
+}
 #main .main_product .product_container .productBox .product_img img {
   width: 100%;
+}
+#main .main_product .product_container .productBox .product_text {
+  cursor: pointer;
 }
 #main .main_product .product_container .productBox .product_text .name {
   margin: 10px 0;

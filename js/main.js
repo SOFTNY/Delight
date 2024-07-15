@@ -61,9 +61,7 @@ products.forEach((product) => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const tabs = document.querySelectorAll(".tab");
-  const productTop = document.querySelector(".product_top");
-  const productBottom = document.querySelector(".product_bottom");
+  const mainProduct = document.querySelector(".main_product");
 
   const products = {
     vintage: [
@@ -270,7 +268,8 @@ document.addEventListener("DOMContentLoaded", function () {
     ],
   };
 
-  //tab
+  const tabs = document.querySelectorAll(".tab");
+
   tabs[0].classList.add("active");
   renderProducts(products[tabs[0].getAttribute("data-tab")]);
 
@@ -287,26 +286,25 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function renderProducts(selectedProducts) {
-    productTop.innerHTML = "";
-    productBottom.innerHTML = "";
+    mainProduct.innerHTML = "";
 
-    selectedProducts.slice(0, 4).forEach((product) => {
-      const productContainer = createProductContainer(product);
-      productTop.appendChild(productContainer);
-    });
-
-    selectedProducts.slice(4).forEach((product) => {
-      const productContainer = createProductContainer(product);
-      productBottom.appendChild(productContainer);
-    });
-  }
-
-  function createProductContainer(product) {
     const productContainer = document.createElement("div");
     productContainer.className = "product_container";
 
+    selectedProducts.forEach((product) => {
+      const productBox = createProductBox(product);
+      productContainer.appendChild(productBox);
+    });
+
+    mainProduct.appendChild(productContainer);
+  }
+
+  function createProductBox(product) {
+    const productBox = document.createElement("div");
+    productBox.className = "productBox";
+
     const imgBox = document.createElement("div");
-    imgBox.className = "imgBox";
+    imgBox.className = "product_img";
 
     const img = document.createElement("img");
     img.src = product.imgSrc;
@@ -315,7 +313,7 @@ document.addEventListener("DOMContentLoaded", function () {
     imgBox.appendChild(img);
 
     const textBox = document.createElement("div");
-    textBox.className = "textBox";
+    textBox.className = "product_text";
 
     const name = document.createElement("div");
     name.className = "name";
@@ -324,49 +322,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const price = document.createElement("div");
     price.className = "price";
 
-    const discount = document.createElement("span");
-    discount.className = "discount";
-    discount.textContent = product.discount;
+    if (product.discount) {
+      const discount = document.createElement("span");
+      discount.className = "discount";
+      discount.textContent = product.discount;
+      price.appendChild(discount);
+    }
 
     const priceText = document.createTextNode(` ${product.price}`);
-
-    price.appendChild(discount);
     price.appendChild(priceText);
 
     textBox.appendChild(name);
     textBox.appendChild(price);
 
-    productContainer.appendChild(imgBox);
-    productContainer.appendChild(textBox);
+    productBox.appendChild(imgBox);
+    productBox.appendChild(textBox);
 
-    return productContainer;
+    return productBox;
   }
-});
-
-//mainBrandStory - swiper
-let swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1.5,
-  spaceBetween: 20,
-
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    type: "bullets",
-    clickable: true,
-  },
-});
-
-document.querySelectorAll(".mySwiper").forEach(function (target) {
-  let swp = target.swiper;
-
-  target.addEventListener("mouseenter", function () {
-    swp.autoplay.stop();
-  });
-
-  target.addEventListener("mouseleave", function () {
-    swp.autoplay.start();
-  });
 });

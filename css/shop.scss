@@ -71,42 +71,41 @@ li {
         display: flex;
         flex-direction: column;
         margin-top: 57px;
-        margin-bottom: 278px;
 
-        .product_top,
-        .product_bottom {
+        .product_container {
             display: flex;
-            gap: 20px;
-            padding: 40px 45px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
 
-
-            .product_container {
+            .productBox {
                 display: flex;
                 flex-direction: column;
-                gap: 20px;
-                cursor: pointer;
+                margin: 10px;
+                width: calc(25% - 20px); // 4개씩 배치되도록 설정 (100% / 4 - margin)
 
-                .imgBox {
+                .product_img {
                     img {
                         width: 100%;
                     }
                 }
 
-                .textBox {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 15px;
-                    font-size: 18px;
+                .product_text {
+                    .name {
+                        margin: 10px 0;
+                    }
 
                     .price {
                         font-weight: 600;
 
                         .discount {
-                            color: #FF0000;
+                            color: red;
+                            margin-right: 5px;
                         }
                     }
                 }
             }
         }
     }
+
+
 }

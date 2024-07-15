@@ -58,37 +58,28 @@ li {
   display: flex;
   flex-direction: column;
   margin-top: 57px;
-  margin-bottom: 278px;
 }
-#main .main_product .product_top,
-#main .main_product .product_bottom {
+#main .main_product .product_container {
   display: flex;
-  gap: 20px;
-  padding: 40px 45px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
-#main .main_product .product_top .product_container,
-#main .main_product .product_bottom .product_container {
+#main .main_product .product_container .productBox {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  cursor: pointer;
+  margin: 10px;
+  width: calc(25% - 20px);
 }
-#main .main_product .product_top .product_container .imgBox img,
-#main .main_product .product_bottom .product_container .imgBox img {
+#main .main_product .product_container .productBox .product_img img {
   width: 100%;
 }
-#main .main_product .product_top .product_container .textBox,
-#main .main_product .product_bottom .product_container .textBox {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  font-size: 18px;
+#main .main_product .product_container .productBox .product_text .name {
+  margin: 10px 0;
 }
-#main .main_product .product_top .product_container .textBox .price,
-#main .main_product .product_bottom .product_container .textBox .price {
+#main .main_product .product_container .productBox .product_text .price {
   font-weight: 600;
 }
-#main .main_product .product_top .product_container .textBox .price .discount,
-#main .main_product .product_bottom .product_container .textBox .price .discount {
-  color: #FF0000;
+#main .main_product .product_container .productBox .product_text .price .discount {
+  color: red;
+  margin-right: 5px;
 }/*# sourceMappingURL=shop.css.map */

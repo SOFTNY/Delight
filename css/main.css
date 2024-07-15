@@ -10,6 +10,7 @@ body {
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 ul,
@@ -68,41 +69,30 @@ button {
   display: flex;
   flex-direction: column;
 }
-#main .main_product .product_top,
-#main .main_product .product_bottom {
+#main .main_product .product_container {
   display: flex;
-  gap: 20px;
-  padding: 40px 45px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20px;
 }
-#main .main_product .product_top .product_container,
-#main .main_product .product_bottom .product_container {
+#main .main_product .product_container .productBox {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  margin: 10px;
+  width: calc(25% - 20px);
 }
-#main .main_product .product_top .product_container .imgBox,
-#main .main_product .product_bottom .product_container .imgBox {
-  cursor: pointer;
-}
-#main .main_product .product_top .product_container .imgBox img,
-#main .main_product .product_bottom .product_container .imgBox img {
+#main .main_product .product_container .productBox .product_img img {
   width: 100%;
 }
-#main .main_product .product_top .product_container .textBox,
-#main .main_product .product_bottom .product_container .textBox {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  font-size: 18px;
-  cursor: pointer;
+#main .main_product .product_container .productBox .product_text .name {
+  margin: 10px 0;
 }
-#main .main_product .product_top .product_container .textBox .price,
-#main .main_product .product_bottom .product_container .textBox .price {
+#main .main_product .product_container .productBox .product_text .price {
   font-weight: 600;
 }
-#main .main_product .product_top .product_container .textBox .price .discount,
-#main .main_product .product_bottom .product_container .textBox .price .discount {
-  color: #FF0000;
+#main .main_product .product_container .productBox .product_text .price .discount {
+  color: red;
+  margin-right: 5px;
 }
 #main .main_categories {
   display: flex;

@@ -78,7 +78,7 @@ li {
         .product_container {
             display: flex;
             flex-wrap: wrap;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
 
             .productBox {
                 display: flex;
@@ -86,6 +86,8 @@ li {
                 flex-direction: column;
                 margin: 10px;
                 width: calc(25% - 20px);
+                margin-bottom: 45px;
+
 
                 .product_img {
                     cursor: pointer;

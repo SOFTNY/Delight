@@ -359,10 +359,8 @@ document.addEventListener("DOMContentLoaded", function () {
     ],
   };
 
-  // Initial render: products for the first tab
-  renderProducts(products.vintage);
+  renderProducts(products.tool);
 
-  // Tab click event
   const tabs = document.querySelectorAll(".tab");
   tabs.forEach((tab) => {
     tab.addEventListener("click", function () {
@@ -376,9 +374,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Function to render products
   function renderProducts(selectedProducts) {
-    mainProduct.innerHTML = ""; // Clear existing products
+    mainProduct.innerHTML = "";
 
     const productContainer = document.createElement("div");
     productContainer.className = "product_container";
@@ -391,7 +388,6 @@ document.addEventListener("DOMContentLoaded", function () {
     mainProduct.appendChild(productContainer);
   }
 
-  // Function to create product box
   function createProductBox(product) {
     const productBox = document.createElement("div");
     productBox.className = "productBox";

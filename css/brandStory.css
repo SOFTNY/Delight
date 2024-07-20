@@ -13,4 +13,31 @@ li {
   margin: 0px;
   padding: 0px;
   list-style: none;
+}
+
+#main {
+  margin-top: 186px;
+  margin-bottom: 302px;
+}
+#main .brandLogo_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+#main .brandLogo_container .text {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+#main .brandLogo_container img {
+  width: 492px;
+  height: 476px;
+}
+#main .brandImg_container {
+  display: flex;
+  width: 33.3%;
+}
+#main .brandImg_container img {
+  width: 100%;
 }/*# sourceMappingURL=brandStory.css.map */

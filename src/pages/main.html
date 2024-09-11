@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delight</title>
+    <!-- favicon -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="../styles/main.css" />
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <header id="header"></header>
+
+    <main id="main">
+      <div class="bannerWrap">
+        <img src="../assets/images/main_banner.jpg" alt="main_banner" />
+        <div class="btnWrap">
+          <a href="../pages/shop.html"><button>Show More</button></a>
+        </div>
+      </div>
+
+      <div class="tab_menu_container">
+        <ul class="tab_menu">
+          <li class="tab" data-tab="vintage">NEW VINTAGE</li>
+          <li class="tab" data-tab="eyeshadow">EYESHADOW</li>
+          <li class="tab" data-tab="dewy">Dewy Gel Glaze Stick</li>
+          <li class="tab" data-tab="cushion">CUSHION & FOUNDATION</li>
+        </ul>
+
+        <div class="best_section">
+          <span class="best_label">BEST</span>
+          <img
+            src="../assets/icons/chevron-down.svg"
+            alt="chevron-down"
+            class="best_arrow"
+          />
+        </div>
+      </div>
+
+      <div class="main_product"></div>
+
+      <!-- categories section -->
+      <div class="categories_section">
+        <div class="categories_title">
+          <p>2024</p>
+          <p>TRENDING PRODUCTS</p>
+        </div>
+        <div class="categories_menu">
+          <div class="imgBox">
+            <img class="img_01" src="../assets/icons/tool.svg" alt="tool" />
+            <img
+              class="img_02"
+              src="../assets/icons/palette.svg"
+              alt="palette"
+            />
+            <img class="img_03" src="../assets/icons/lip.svg" alt="lip" />
+          </div>
+          <div class="menu_01">
+            <p><a href="#">WATER VELVET COVER FOUNDATION</a></p>
+            <p><a href="#">STAY FIXER MULTI-COLOR POWDER</a></p>
+            <p><a href="#">DEWY GEL GLAZE STICK</a></p>
+          </div>
+
+          <div class="menu_02">
+            <p><a href="#">SOFT BLURRING EYE PALETTE</a></p>
+            <p><a href="#">IRONCLAD PEN EYELINER</a></p>
+          </div>
+
+          <div class="menu_03">
+            <p><a href="#">WATER BLURRING FIXING TINT</a></p>
+            <p><a href="#">DEWY GEL GLOW TINT</a></p>
+            <p><a href="#">DEWY GEL MAXI GLOSS</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- palette section -->
+      <div class="palette_section">
+        <div class="title">
+          <p>VERSATILE DAILY PALETTE</p>
+        </div>
+        <div class="palette_banner">
+          <div class="palette_texts">
+            <img src="../assets/icons/palette_texts.svg" alt="palette_texts" />
+          </div>
+        </div>
+
+        <div class="palette_products" id="paletteProducts"></div>
+        <!-- 여기에 제품이 추가될 예정 -->
+      </div>
+
+      <!-- brand story -->
+      <div class="brandStory_section">
+        <div class="title">BRAND STORY</div>
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../assets/images/bs-1.jpg" alt="bs-1" />
+              <div class="slide-content">
+                <h3>Glow without clumping that seems to be coded</h3>
+                <p>
+                  A fine and uniform powder particle texture that applies thinly
+                  and smoothly.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/bs-2.jpg" alt="bs-2" />
+              <div class="slide-content">
+                <h3>Glossy lips completed with syrup</h3>
+                <p>
+                  Extreme shine that is achieved with just one application,
+                  providing rich coloring effects and a glowing expression.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/bs-3.jpg" alt="bs-3" />
+              <div class="slide-content">
+                <h3>Spreads transparently like watercolo</h3>
+                <p>
+                  Contains pearl powders that softly reflect light, adding a
+                  natural radiance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <!-- js -->
+    <script src="../js/layout.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

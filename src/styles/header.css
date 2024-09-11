@@ -1,0 +1,167 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url(../fonts/Roboto-Thin.woff2) format("woff2"), url(../fonts/Roboto-Thin.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/Roboto-Light.woff2) format("woff2"), url(../fonts/Roboto-Light.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.woff2) format("woff2"), url(../fonts/Roboto-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/Roboto-Medium.woff2) format("woff2"), url(../fonts/Roboto-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Roboto-Bold.woff2) format("woff2"), url(../fonts/Roboto-Bold.woff) format("woff");
+}
+* {
+  font-family: "Roboto";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 40px 45px;
+  background: transparent;
+  z-index: 999;
+}
+#header .menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+#header .menu li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#header .menu li .searchWraper {
+  display: flex;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+#header .menu li .searchWraper input {
+  background: transparent;
+  width: 108px;
+  height: 27px;
+  border: none;
+  outline: none;
+}
+#header .menu li .searchWraper img {
+  cursor: pointer;
+}
+#header .menu .shop-menu .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 0;
+  list-style: none;
+  z-index: 1000;
+  width: 200px;
+}
+#header .menu .shop-menu .dropdown li {
+  padding: 10px 20px;
+  text-align: left;
+}
+#header .menu .shop-menu .dropdown li a {
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+#header .menu .shop-menu .dropdown li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#header .menu .shop-menu:hover .dropdown {
+  display: block;
+}
+#header .menu .cart-trigger {
+  cursor: pointer;
+}
+#header .overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 998;
+  /* Overlay가 카트 박스 뒤에 위치해야 합니다. */
+}
+#header .cart-box {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  width: 587px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  /* 카트 박스가 Overlay 위에 위치해야 합니다. */
+}
+#header .cart-box .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+#header .cart-box h2 {
+  margin-bottom: 20px;
+}/*# sourceMappingURL=header.css.map */

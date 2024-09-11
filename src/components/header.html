@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delight-header</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../styles/header.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">
+        <a href="../pages/main.html">
+          <img src="../assets/icons/logo.svg" alt="Pc_logo" />
+        </a>
+      </div>
+      <ul class="menu">
+        <li>
+          <div class="searchWraper">
+            <input type="search" />
+            <img src="../assets/icons/search.svg" alt="Pc_search" />
+          </div>
+        </li>
+        <li class="shop-menu">
+          <a href="../pages/shop.html">SHOP</a>
+          <ul class="dropdown">
+            <li><a href="../pages/shop.html">NEW VINTAGE</a></li>
+            <li><a href="../pages/face-makeup.html">FACE MAKEUP</a></li>
+            <li><a href="../pages/eye-makeup.html">EYE MAKEUP</a></li>
+            <li><a href="../pages/lip-makeup.html">LIP MAKEUP</a></li>
+            <li><a href="../pages/nail.html">NAIL</a></li>
+            <li><a href="../pages/tool.html">TOOL</a></li>
+          </ul>
+        </li>
+        <li><a href="#">BRAND STORY</a></li>
+        <li><a href="../pages/login.html">LOGIN</a></li>
+        <li class="cart-trigger"><a href="#">CART(2)</a></li>
+      </ul>
+
+      <!-- Add overlay and cart-box -->
+      <div class="overlay"></div>
+      <div class="cart-box">
+        <button class="close-btn">×</button>
+        <h2>Shopping Cart</h2>
+        <div class="cart-items">
+          <div>
+            <img src="../assets/images/eye-1.png" alt="eye-1" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script src="../js/header.js"></script>
+  </body>
+</html>

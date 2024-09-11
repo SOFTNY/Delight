@@ -1,0 +1,40 @@
+//En - Roboto
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100; //Thin
+    src: url(../fonts/Roboto-Thin.woff2) format('woff2'),
+        url(../fonts/Roboto-Thin.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300; ///Light
+    src: url(../fonts/Roboto-Light.woff2) format('woff2'),
+        url(../fonts/Roboto-Light.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400; //Regualr
+    src: url(../fonts/Roboto-Regular.woff2) format('woff2'),
+        url(../fonts/Roboto-Regular.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500; //Medium
+    src: url(../fonts/Roboto-Medium.woff2) format('woff2'),
+        url(../fonts/Roboto-Medium.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700; //Bold
+    src: url(../fonts/Roboto-Bold.woff2) format('woff2'),
+        url(../fonts/Roboto-Bold.woff) format('woff')
+}

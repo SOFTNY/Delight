@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url(../fonts/Roboto-Thin.woff2) format("woff2"), url(../fonts/Roboto-Thin.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/Roboto-Light.woff2) format("woff2"), url(../fonts/Roboto-Light.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.woff2) format("woff2"), url(../fonts/Roboto-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/Roboto-Medium.woff2) format("woff2"), url(../fonts/Roboto-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Roboto-Bold.woff2) format("woff2"), url(../fonts/Roboto-Bold.woff) format("woff");
+}
+* {
+  font-family: "Roboto";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button {
+  cursor: pointer;
+}
+
+#main {
+  padding: 130px 45px;
+}
+#main .categoryWrap {
+  display: flex;
+  flex-direction: column;
+}
+#main .categoryWrap .categoryMenu {
+  display: flex;
+  font-size: 24px;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+#main .categoryWrap .categoryMenu li {
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+#main .categoryWrap .categoryMenu li.active {
+  color: #000;
+}
+#main .categoryWrap .filter {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 18px;
+  gap: 20px;
+  padding-top: 35px;
+}
+#main .categoryWrap .filter li {
+  color: rgba(0, 0, 0, 0.3);
+}
+#main .categoryWrap .filter li:active {
+  color: #000;
+}
+#main .productContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+#main .productContainer .product {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 0;
+  cursor: pointer;
+}
+#main .productContainer .product img {
+  width: 100%;
+  height: auto;
+}
+#main .productContainer .product .product-name {
+  font-size: 18px;
+}
+#main .productContainer .product .product-price {
+  font-size: 18px;
+}/*# sourceMappingURL=shop.css.map */
